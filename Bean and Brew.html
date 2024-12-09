@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean and Brew Cafe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #814C45;
+            padding: 20px 20px;
+        }
+        .header img {
+            height: 50px;
+        }
+        .nav-bar {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-bar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            background-color: #B9716F;
+            border-radius: 5px;
+        }
+        .nav-bar a:hover {
+            background-color: #D68D87;
+        }
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .auth-buttons button {
+            padding: 10px 15px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .auth-buttons button:hover {
+            background-color: #333;
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #814C45;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            padding: 10px 0;
+        }
+        .sidebar img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .sidebar button {
+            width: 150px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #B9716F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .sidebar button:hover {
+            background-color: #D68D87;
+        }
+        .main-content {
+            margin: 20px;
+            margin-left: 220px; /* To offset the sidebar width */
+            text-align: center;
+        }
+        .main-content h1 {
+            font-size: 120px;
+            font-family: 'Brush Script MT', cursive;
+            margin: 20px 0;
+        }
+        .locations {
+            background-color: #F5F5F5;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 20px auto;
+        }
+        .locations h2 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .locations-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .locations-buttons button {
+            padding: 10px 20px;
+            border: 1px solid black;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .locations-buttons button:hover {
+            background: #E8E8E8;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Bean and Brew Logo">
+        <nav class="nav-bar">
+            <a href="#">Menu</a>
+            <a href="#">Book A Table</a>
+            <a href="#">Order</a>
+            <a href="#">Basket</a>
+        </nav>
+        <div class="auth-buttons">
+            <button>Sign In</button>
+            <button>Sign Up</button>
+        </div>
+    </header>
+    <div class="sidebar">
+        <img src="https://t4.ftcdn.net/jpg/05/14/51/79/360_F_514517927_dXLi1DauUmrCaE3AkElsVgJ1jaYZMcSA.jpg" alt="Bean and Brew Logo" style="width:119px;height:90px;">
+        <button>Contact Us</button>
+        <button>Careers</button>
+    </div>
+    <main class="main-content">
+        <h1>Welcome</h1>
+        <div class="locations">
+            <h2>Our locations</h2>
+            <div class="locations-buttons">
+                <button>Harrogate</button>
+                <button>Leeds</button>
+                <button>Knaresborough Castle</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
